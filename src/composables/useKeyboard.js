@@ -91,6 +91,12 @@ export default function useKeyboard (props, context, dep)
       case 'Enter':
         e.preventDefault()
 
+        // ignore IME confirmation
+        // https://github.com/vueform/multiselect/pull/226
+        if (e.keyCode === 229) {
+          return
+        }
+
         if (activeIndex !== -1 && activeIndex !== undefined) {
           update([...iv.value].filter((v, k) => k !== activeIndex))
 
