@@ -1,5 +1,5 @@
 {
-  "name": "@vueform/multiselect",
+  "name": "@residenti/multiselect",
   "version": "2.5.6",
   "private": false,
   "description": "Vue 3 multiselect component with single select, multiselect and tagging options.",
